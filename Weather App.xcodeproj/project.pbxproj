@@ -16,6 +16,9 @@
 		C394912F2A3DF50E00C7D0F2 /* Weather_AppTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = C394912E2A3DF50E00C7D0F2 /* Weather_AppTests.swift */; };
 		C39491392A3DF50E00C7D0F2 /* Weather_AppUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = C39491382A3DF50E00C7D0F2 /* Weather_AppUITests.swift */; };
 		C394913B2A3DF50E00C7D0F2 /* Weather_AppUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = C394913A2A3DF50E00C7D0F2 /* Weather_AppUITestsLaunchTests.swift */; };
+		C394915F2A3E318F00C7D0F2 /* WeatherData.swift in Sources */ = {isa = PBXBuildFile; fileRef = C394915E2A3E318F00C7D0F2 /* WeatherData.swift */; };
+		C39491612A3E359100C7D0F2 /* WeatherManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = C39491602A3E359100C7D0F2 /* WeatherManager.swift */; };
+		C39491632A3E4E8000C7D0F2 /* WeatherModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = C39491622A3E4E8000C7D0F2 /* WeatherModel.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -49,6 +52,9 @@
 		C39491342A3DF50E00C7D0F2 /* Weather AppUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Weather AppUITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		C39491382A3DF50E00C7D0F2 /* Weather_AppUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Weather_AppUITests.swift; sourceTree = "<group>"; };
 		C394913A2A3DF50E00C7D0F2 /* Weather_AppUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Weather_AppUITestsLaunchTests.swift; sourceTree = "<group>"; };
+		C394915E2A3E318F00C7D0F2 /* WeatherData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WeatherData.swift; sourceTree = "<group>"; };
+		C39491602A3E359100C7D0F2 /* WeatherManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WeatherManager.swift; sourceTree = "<group>"; };
+		C39491622A3E4E8000C7D0F2 /* WeatherModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WeatherModel.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -99,10 +105,11 @@
 		C39491162A3DF50C00C7D0F2 /* Weather App */ = {
 			isa = PBXGroup;
 			children = (
+				C394914A2A3E077F00C7D0F2 /* Model */,
 				C39491172A3DF50C00C7D0F2 /* AppDelegate.swift */,
 				C39491192A3DF50C00C7D0F2 /* SceneDelegate.swift */,
-				C394911B2A3DF50C00C7D0F2 /* ViewController.swift */,
-				C394911D2A3DF50C00C7D0F2 /* Main.storyboard */,
+				C39491482A3E076900C7D0F2 /* Controller */,
+				C39491492A3E077200C7D0F2 /* View */,
 				C39491202A3DF50E00C7D0F2 /* Assets.xcassets */,
 				C39491222A3DF50E00C7D0F2 /* LaunchScreen.storyboard */,
 				C39491252A3DF50E00C7D0F2 /* Info.plist */,
@@ -125,6 +132,32 @@
 				C394913A2A3DF50E00C7D0F2 /* Weather_AppUITestsLaunchTests.swift */,
 			);
 			path = "Weather AppUITests";
+			sourceTree = "<group>";
+		};
+		C39491482A3E076900C7D0F2 /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				C394911B2A3DF50C00C7D0F2 /* ViewController.swift */,
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		C39491492A3E077200C7D0F2 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				C394911D2A3DF50C00C7D0F2 /* Main.storyboard */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		C394914A2A3E077F00C7D0F2 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				C394915E2A3E318F00C7D0F2 /* WeatherData.swift */,
+				C39491602A3E359100C7D0F2 /* WeatherManager.swift */,
+				C39491622A3E4E8000C7D0F2 /* WeatherModel.swift */,
+			);
+			path = Model;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -260,6 +293,9 @@
 			files = (
 				C394911C2A3DF50C00C7D0F2 /* ViewController.swift in Sources */,
 				C39491182A3DF50C00C7D0F2 /* AppDelegate.swift in Sources */,
+				C39491612A3E359100C7D0F2 /* WeatherManager.swift in Sources */,
+				C394915F2A3E318F00C7D0F2 /* WeatherData.swift in Sources */,
+				C39491632A3E4E8000C7D0F2 /* WeatherModel.swift in Sources */,
 				C394911A2A3DF50C00C7D0F2 /* SceneDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
